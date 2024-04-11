@@ -114,8 +114,7 @@ def run(
     if select_bands:
         # if is_random:
         #     pass
-        #     # start = np.random.randint(low=0, high=X_train.shape[1], dtype=int)
-        #     # bands_to_select = list(range(start, start + n_clusters))
+        #     # bands_to_select = np.random.choice(X_train.shape[1], n_clusters, replace=False)
         # else:
         #     how = "VIG-based"
         #     print("selecting bands")
