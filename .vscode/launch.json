@@ -1,0 +1,91 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "bombs",
+            "type": "python",
+            "request": "launch",
+            "module": "bombs.runner",
+            "justMyCode": true,
+            "args": [
+                "--bands_per_antibody",
+                "10",
+                "--data_path",
+                "data",
+                "--ref_map_path",
+                "data",
+                "--dest_path",
+                "bombs/out"
+            ]
+        },
+        {
+            "name": "runner",
+            "type": "python",
+            "request": "launch",
+            "module": "runner",
+            "justMyCode": true
+        },
+        {
+            "name": "runner_reg",
+            "type": "python",
+            "request": "launch",
+            "module": "runner_reg",
+            "justMyCode": true
+        },
+        {
+            "name": "metrics_vs",
+            "type": "python",
+            "request": "launch",
+            "module": "metrics_vs",
+            "justMyCode": true
+        },
+        {
+            "name": "metrics",
+            "type": "python",
+            "request": "launch",
+            "module": "class_metric",
+            "justMyCode": true
+        },
+        {
+            "name": "all",
+            "type": "python",
+            "request": "launch",
+            "module": "all_",
+            "justMyCode": true
+        },
+        {
+            "name": "all_class",
+            "type": "python",
+            "request": "launch",
+            "module": "all_class",
+            "justMyCode": true
+        },
+        {
+            "name": "compare",
+            "type": "python",
+            "request": "launch",
+            "module": "bombs.compare",
+            "justMyCode": true
+        },
+        {
+            "name": "mi",
+            "type": "python",
+            "request": "launch",
+            "module": "mi.runner",
+            "justMyCode": true,
+            "args": [
+                "--bands_num",
+                "10",
+                "--data_path",
+                "C:\\Users\\luktu\\Downloads\\gawll (1)\\others\\pavia.npy",
+                "--ref_map_path",
+                "C:\\Users\\luktu\\Downloads\\gawll (1)\\others\\pavia_gt.npy",
+                "--dest_path",
+                "mi/out",
+            ]
+        },
+    ]
+}
